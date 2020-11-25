@@ -1,0 +1,15 @@
+$
+@"LABEL":[Interrupt Type Time secs/Volume mL/Temperature Both L Boiler 1 M Boiler 2 N (T|V|B|M|N)] [Interrupt Value (Float)] [Boiler 1 Setpoint (Float)] [Boiler 2 Setpoint (Float)] [Pump 1 Duty [Int]] [Pump 2 Duty [Int]] [Three Way Solenoid (Bool)]
+#
+
+Premise: Do state until interrupt
+
+Complex Example:
+$
+@Preheat:M 105.0 0.0 2 0 1 //Preheat boiler to 105.0C before next step
+@Pre-Infuse:V 2.0 100.0 0.0 2 0 1 //Infuse 2mL @ 20% duty cycle @ 100.0C before next step
+@Rest:T 2.0 100.0 0.0 0 0 1 //Rest 2 seconds @ 0% duty cycle before next step
+@Ramp:V 4.0 100.0 0.0 6 0 1 //Infuse 4mL @ 60% duty cycle @ 100.0C before next step 
+@Extract:V 34.0 100.0 0.0 10 0 1 //Infuse 34 mL @ 100% duty cycle @ 100.0C before next step
+@Rest:T 2.0 0.0 0.0 0 0 1 //Rest 2 seconds @ 0% duty cycle @ default boiler temperature before next step
+#
