@@ -1,3 +1,7 @@
 (sym_lib_table
   (lib (name ADS124S0x)(type Legacy)(uri /Users/josh/Dropbox/CREMA/CREMAv2/KiCad/ADS124S06IPBSR.lib)(options "")(descr ""))
+  (lib (name ADS124S06_TI)(type Legacy)(uri /Users/josh/Dropbox/CREMA/CREMAv2/KiCad/ADS124S06PBS.lib)(options "")(descr ""))
+  (lib (name PSK-10W)(type Legacy)(uri /Users/josh/Dropbox/CREMA/CREMAv2/KiCad/PSK-10W-5.lib)(options "")(descr ""))
+  (lib (name TPS2121)(type Legacy)(uri /Users/josh/Dropbox/CREMA/CREMAv2/KiCad/TPS2121.lib)(options "")(descr ""))
+  (lib (name 1217861-1)(type Legacy)(uri /Users/josh/Dropbox/CREMA/CREMAv2/KiCad/1217861-1.lib)(options "")(descr ""))
 )
